@@ -10,7 +10,7 @@ function MenuItem({ text = "", selected=false, onClick=()=>{}}) {
 
 export default function TopMenu({values=[], selected="all", onItemClick}) {
     return (
-        <nav>
+        <nav className="hidden md:block">
             <ul className='flex gap-4 text-base'>
                 {
                     values.map((item, index)=> <MenuItem key={index} selected={item.toLowerCase() === selected.toLowerCase()} onClick={(evt)=> onItemClick(evt)} text={item}/>)
