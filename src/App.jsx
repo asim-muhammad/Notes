@@ -95,8 +95,7 @@ function App() {
           asim.
         </span>
 
-        <button onClick={(evt)=>{
-        }}>Go back</button>
+        
 
         {
           messageShow && <Message text={message} className='absolute right-4 bottom-4' />
